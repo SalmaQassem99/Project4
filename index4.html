@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" This Is Description For Project 1" />
+    <title>Project 1</title>
+    <!--Bootstrap File-->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <!--Main Css File-->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!--Icons Library-->
+    <link rel="stylesheet" href="./styles/all.min.css" />
+  </head>
+
+  <body>
+    <div class="overlay position-fixed top-50 start-50 translate-middle"></div>
+    <div class="success-card rounded-5 p-3">
+      <button class="closeModal rounded-circle">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="card-wrapper h-100 rounded-5">
+        <div
+          class="img-wrapper d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="./media/images/bunny.svg"
+            alt="bunny image"
+            class="w-100 object-fit-contain"
+          />
+        </div>
+        <div class="outer-card py-3 rounded-1">
+          <div
+            class="text-card d-flex gap-3 justify-content-center align-items-center"
+          >
+            <div class="content d-flex flex-column align-items-center">
+              <span class="message-text"
+                >your score is: <span class="score"></span
+              ></span>
+              <span
+                class="score-text d-flex justify-content-center gap-2 flex-wrap"
+              ></span>
+            </div>
+            <div class="score-icon-wrapper">
+              <img
+                src="./media/images/object.svg"
+                alt="score image"
+                class="w-100 object-fit-contain"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="arrows py-4 d-flex justify-content-center gap-5">
+          <button
+            class="left-arrow arrow d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="./media/images/chevron_left.svg"
+              class="object-fit-contain"
+            />
+          </button>
+          <button
+            class="left-right arrow d-flex justify-content-center align-items-center"
+          >
+            <img
+              src="./media/images/chevron_right.svg"
+              class="object-fit-contain"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="show-success">show success</button>
+    <div class="homepage p-4">
+      <div class="head d-flex justify-content-between">
+        <button
+          class="back control-icon d-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-left-long"></i>
+        </button>
+        <button
+          class="settings control-icon d-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+      <div class="vector cloud position-relative start-50 translate-middle">
+        <img
+          src="./media/images/Vector.svg"
+          alt="cloud-img"
+          class="w-100 h-100 object-fit-contain"
+        />
+        <div
+          class="text position-absolute start-50 translate-middle-x d-flex flex-column gap-4"
+        >
+          <div
+            class="first-line d-flex justify-content-center align-items-center gap-3"
+          >
+            <p class="firstWord m-0">at</p>
+            <p class="secondWord m-0">the</p>
+          </div>
+          <p
+            class="d-flex justify-content-center align-items-center thirdWord m-0"
+          >
+            airbort
+          </p>
+        </div>
+        <button class="play-button position-absolute rounded-pill">play</button>
+      </div>
+      <div class="vector plane position-fixed end-0 top-50 translate-middle-y">
+        <img
+          src="./media/images/plane.svg"
+          alt="plane-img"
+          class="w-100 h-100 object-fit-contain"
+        />
+      </div>
+      <div
+        class="vector bags position-fixed start-50 bottom-0 translate-middle-x"
+      >
+        <img
+          src="./media/images/bags.svg"
+          alt="bags-img"
+          class="w-100 h-100 object-fit-contain"
+        />
+      </div>
+    </div>
+    <div class="game p-4 d-flex flex-column">
+      <div class="head d-flex justify-content-between">
+        <div class="top">
+          <button
+            class="back control-icon d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-left-long"></i>
+          </button>
+        </div>
+        <div class="right d-flex gap-3">
+          <button
+            class="volume control-icon d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
+          <button
+            class="music control-icon d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-music"></i>
+          </button>
+          <button
+            class="settings control-icon d-flex justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
+      </div>
+      <div class="game-vector plane">
+        <span class="vector-text">click on box</span>
+        <img
+          src="./media/images/gameVector1.svg"
+          alt="plane-vector"
+          class="w-100 h-100 object-fit-contain"
+        />
+      </div>
+      <div class="cards-wrapper w-100 my-4 d-flex">
+        <button
+          class="left-arrow disabled arrow d-flex justify-content-center align-items-center p-2"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="container">
+          <div class="cards d-flex justify-content-center">
+            <div class="game-card d-flex flex-column gap-5">
+              <div class="card-wrapper" data-id="card1">
+                <div
+                  class="w-100 h-100 card-front px-2 px-md-4 py-4 position-absolute top-0 start-0 d-flex justify-content-center align-items-center"
+                >
+                  <p class="text m-0">travelling by air is popular today</p>
+                  <div class="vectors-wrapper position-absolute d-flex">
+                    <img
+                      src="./media/images/cloud1.png"
+                      alt="cloud-1-vector"
+                      class="vector w-50 object-fit-contain"
+                    />
+                    <img
+                      src="./media/images/cloud2.png"
+                      alt="cloud-2-vector"
+                      class="vector position-relative object-fit-contain"
+                    />
+                  </div>
+                </div>
+                <div class="w-100 h-100 card-back d-flex flex-column">
+                  <div class="img-wrapper">
+                    <img
+                      src="./media/images/travel.jpg"
+                      alt="Front Image"
+                      class="img w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                  <p class="text m-0 p-2">to travel by air</p>
+                </div>
+              </div>
+              <div
+                data-id="card1"
+                class="d-flex gap-4 gap-lg-5 justify-content-center align-items-center icons"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center p-2 rounded-circle icon sound"
+                >
+                  <img
+                    src="./media/images/soundIcon.svg"
+                    class="w-100 h-100 object-fit-contain"
+                  />
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center p-2 position-relative rounded-circle icon-new speak"
+                >
+                  <div class="outline"></div>
+                  <div class="outline" id="delayed"></div>
+                  <img
+                    src="./media/images/speakIcon.svg"
+                    class="w-100 h-100 object-fit-contain"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="game-card d-flex flex-column gap-5">
+              <div class="card-wrapper" data-id="card2">
+                <div
+                  class="w-100 h-100 card-front px-2 px-md-4 py-4 position-absolute top-0 start-0 d-flex justify-content-center align-items-center"
+                >
+                  <p class="text m-0">travelling by air is popular today</p>
+                  <div
+                    class="vectors-wrapper position-absolute d-flex justify-content-end"
+                  >
+                    <img
+                      src="./media/images/cloud3.png"
+                      alt="cloud-3-vector"
+                      class="vector w-50 object-fit-contain"
+                    />
+                  </div>
+                </div>
+                <div class="w-100 h-100 card-back d-flex flex-column">
+                  <div class="img-wrapper">
+                    <img
+                      src="./media/images/airport.jpg"
+                      alt="Front Image"
+                      class="img w-100 h-100 object-fit-cover"
+                    />
+                  </div>
+                  <p class="text m-0 p-2">an airport</p>
+                </div>
+              </div>
+              <div
+                data-id="card2"
+                class="d-flex gap-4 gap-lg-5 justify-content-center align-items-center icons"
+              >
+                <div
+                  class="d-flex justify-content-center align-items-center p-2 rounded-circle icon sound"
+                >
+                  <img
+                    src="./media/images/soundIcon.svg"
+                    class="w-100 h-100 object-fit-contain"
+                  />
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center p-2 position-relative rounded-circle icon-new speak"
+                >
+                  <div class="outline"></div>
+                  <div class="outline" id="delayed"></div>
+                  <img
+                    src="./media/images/speakIcon.svg"
+                    class="w-100 h-100 object-fit-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="right-arrow arrow d-flex justify-content-center align-items-center p-2"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="game-vector banner d-flex align-items-end">
+        <img
+          src="./media/images/gameVector2.svg"
+          alt="banner-vector"
+          class="w-100 object-fit-contain"
+        />
+      </div>
+      <button
+        class="pause control-icon d-flex justify-content-center align-items-center"
+      >
+        <i class="fa-solid fa-pause"></i>
+      </button>
+    </div>
+    <script src="./JS/script.js" async></script>
+  </body>
+</html>
